@@ -1,0 +1,16 @@
+{
+  "name": "Apna Drive Self Drive Rental Goa",
+  "short_name": "Apna Drive",
+  "description": "Premium Self Drive Car Rental in Goa. Hatchbacks, SUVs, family cars and luxury drop tops.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#12372A",
+  "theme_color": "#1F6F50",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

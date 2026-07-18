@@ -1,0 +1,6 @@
+{
+  "name": "Apna Drive",
+  "description": "Premium self-drive car rental website in Goa. Book well-maintained hatchbacks, SUVs, and luxury cars at transparent rates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

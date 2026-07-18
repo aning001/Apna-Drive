@@ -1,0 +1,8 @@
+# Apna Drive - Self Drive Car Rental Goa
+This project is a pristine Vanilla HTML5, CSS3, and JavaScript multi-page website serving Apna Drive, a premium self-drive car rental agency in Goa.
+
+## Core Pages
+- /index.html: Main landing page.
+- /fleet.html: Full car database with dynamic Javascript search and categorization filters.
+- /booking.html: Multi-field scheduling reservation engine with WhatsApp forwarding triggers.
+- /contact.html: Customer support page with an editable Google Map iframe.

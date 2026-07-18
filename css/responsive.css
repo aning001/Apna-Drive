@@ -1,0 +1,267 @@
+/* 
+  =========================================
+  APNA DRIVE - Self Drive Car Rental Goa
+  Responsive Overrides (responsive.css)
+  =========================================
+*/
+
+/* --- Large Desktop & Standard Desktop (Up to 1200px) --- */
+@media (max-width: 1200px) {
+  html { font-size: 15px; }
+  .grid-4 { grid-template-columns: repeat(3, 1fr); }
+  .booking-form-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .booking-form-grid .form-group-col:nth-child(1) {
+    grid-column: span 3;
+  }
+  .booking-form-grid .form-group-col:last-child {
+    grid-column: span 3;
+  }
+  .top-bar-left, .top-bar-right {
+    gap: 1rem;
+  }
+}
+
+/* --- Laptops & Small Desktops (Up to 1024px) --- */
+@media (max-width: 1024px) {
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.85rem; }
+  
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-actions {
+    justify-content: center;
+  }
+  
+  .hero-trust-points {
+    justify-content: center;
+  }
+  
+  .hero-visual {
+    margin-top: 2rem;
+  }
+  
+  .car-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .travel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* --- Tablets & Large Phablets (Up to 768px) --- */
+@media (max-width: 768px) {
+  html { font-size: 14px; }
+  .section-padding { padding: 4rem 0; }
+  
+  /* Show Hamburger, Hide Desktop Nav */
+  .hamburger {
+    display: flex;
+  }
+  
+  .nav-menu, .header-container .btn {
+    display: none;
+  }
+  
+  .navbar {
+    height: 70px;
+  }
+  
+  /* Floating buttons on tablet - keep as is, but hide text */
+  .floating-action-btn span {
+    display: none;
+  }
+  .floating-action-btn {
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .booking-form-outer {
+    margin-top: -1.5rem;
+  }
+  
+  .booking-form-card {
+    padding: 1.5rem;
+  }
+  
+  .booking-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .booking-form-grid .form-group-col:nth-child(1) {
+    grid-column: span 2;
+  }
+  
+  .booking-form-grid .form-group-col:last-child {
+    grid-column: span 2;
+  }
+  
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .steps-line {
+    display: none; /* Hide connecting steps line on stacked grid */
+  }
+  
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* --- Small Phablets & Mobile Screens (Up to 480px / 425px) --- */
+@media (max-width: 500px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  
+  .container {
+    padding: 0 1.2rem;
+  }
+  
+  .top-bar {
+    display: none; /* Hide top bar on mobile to save precious height */
+  }
+  
+  .hero-section {
+    padding: 3rem 0;
+  }
+  
+  .hero-title {
+    font-size: 1.85rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  
+  .hero-actions .btn {
+    width: 100%;
+  }
+  
+  .hero-trust-points {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .badge-widget {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.8rem;
+  }
+  
+  .badge-widget.pos-top {
+    top: 5%;
+    left: -2%;
+  }
+  
+  .badge-widget.pos-bottom {
+    bottom: 5%;
+    right: -2%;
+  }
+  
+  .booking-form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .booking-form-grid .form-group-col:nth-index(n), 
+  .booking-form-grid .form-group-col:nth-child(1),
+  .booking-form-grid .form-group-col:last-child {
+    grid-column: span 1;
+  }
+  
+  .car-cards-grid,
+  .features-grid,
+  .location-cards-grid,
+  .services-grid,
+  .travel-grid,
+  .steps-grid,
+  .category-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    gap: 1.5rem;
+  }
+  
+  /* Footer responsive stacking */
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .footer-bottom-grid {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+  }
+  
+  .footer-legal-links {
+    justify-content: center;
+  }
+  
+  /* Mobile Sticky Dock Configuration */
+  .fixed-floating-actions {
+    display: none; /* Hide side floating action panel on mobile */
+  }
+  
+  .mobile-sticky-dock {
+    display: grid; /* Display the clean bottom horizontal sticky bar on mobile */
+  }
+  
+  /* Add safe bottom padding to body and footer so dock does not cover content */
+  body {
+    padding-bottom: 70px;
+  }
+  .footer {
+    padding-bottom: 70px;
+  }
+}
+
+/* --- Ultra Tiny Phablets / 320px Width Support --- */
+@media (max-width: 340px) {
+  h1 { font-size: 1.7rem; }
+  .mobile-nav {
+    width: 280px;
+  }
+  .mobile-sticky-dock {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  .mobile-dock-btn {
+    font-size: 0.8rem;
+    padding: 0.6rem 0.5rem;
+  }
+}

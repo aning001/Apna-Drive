@@ -1,0 +1,8 @@
+/* TEAM */
+Founder & Developer: Apna Drive Goa Team
+Site Architect: Google AI Studio Coding Agent
+Contact: info@apnadrive.com
+
+/* SITE */
+Standards: HTML5, CSS3, Vanilla JavaScript
+Host: Static, cPanel, Netlify, Cloudflare
